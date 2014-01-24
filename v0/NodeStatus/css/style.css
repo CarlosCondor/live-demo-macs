@@ -1,0 +1,225 @@
+#entiTysContainer{
+    height: 100%;
+    margin: 0.5em;
+    padding: 0;
+}
+
+.entiTyInfoTitle{
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    color: #464646;
+    margin: 3px;
+}
+
+.entiTyInfo{
+    font-weight:normal;  
+    margin-left: 3px;
+}
+
+#note{
+    font-family: Verdana;
+    font-size: 13px;
+    color: #464646;
+    margin: 3px;
+}
+
+#graphcoNtainer{
+    height: 100%;
+}
+
+#buttonsContainer{
+    width: 46%;
+    margin-left: 18%;
+    margin-top: 2%;
+}
+
+
+#extraInfoContainer{
+    margin-top:1em;
+    margin-left: 18%;
+}
+
+.styled_button > div > i {
+    display: none;
+}
+
+.styled_button.waiting-response > div > i {
+    display: inline-block;
+}
+
+
+.flotr-canvas, .flotr-overlay{
+    z-index: 0;
+}
+
+.leyendBox {
+    position: absolute;
+    border: 1px solid #777;
+    box-shadow: 2px 2px 5px #686868;
+    font-size: 1.4ex;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.leyendBox:hover {
+    opacity: 1;
+}
+
+.leyendBox .backLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.leyendBox.ne {
+    right: 2ex;
+    top: -1ex;
+}
+
+.leyendBox.no {
+    left: 2ex;
+    top: -1ex;
+}
+
+.leyendBox.se {
+    right: 2ex;
+    bottom: 1ex;
+}
+
+.leyendBox.so {
+    left: 2ex;
+    bottom: 1ex;
+}
+
+.mainLeyendLine {
+    display: block;
+    white-space: nowrap;
+}
+
+.leyendBox .lineLeyend {
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.leyendBox .lineLeyend:hover {
+    color: black;
+    opacity: 1;
+}
+
+.leyendBox .lineLeyend.off:hover {
+    color: black;
+    opacity: 1;
+}
+
+.leyendBox .lineLeyend.off {
+    opacity: 0.4;
+}
+
+.leyendBox .colorBox {
+    width: 15px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.leyendBox .lineLeyend:hover .colorBox {
+    -moz-box-shadow: 0 0 2px 1px #4674AD;
+    -webkit-box-shadow: 0 0 2px 1px #4674AD;
+    box-shadow: 0 0 2px 1px #4674AD;
+    border-color: white;
+}
+
+.leyendBox .leyendLabel {
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.leyendBox .pointsSelect {
+    font-family: FontAwesome;
+    display: inline-block;
+    margin: 2px;
+    vertical-align: middle;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.leyendBox .pointsSelect.off{
+    opacity: 1;
+}
+
+.leyendBox .lineLeyend .pointsSelect:hover {
+    -moz-box-shadow: 0 0 2px 1px #4674AD;
+    -webkit-box-shadow: 0 0 2px 1px #4674AD;
+    box-shadow: 0 0 2px 1px #4674AD;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    height: 100%;
+    cursor: pointer;
+    background: #5A5151;
+    border-radius: 9px;
+    margin: 0 3px;
+    border: 1px solid #FFF;
+}
+
+.button.on{
+    background: #807EB1;
+}
+.button:hover {
+    color: #9CB4F1;
+    -moz-box-shadow: 0 0 2px 1px #9CB4F1;
+    -webkit-box-shadow: 0 0 2px 1px #9CB4F1;
+    box-shadow: 0 0 2px 1px #9CB4F1;
+}
+
+#controlBar {
+    width: 100%;
+    height: 35px;
+    display: inline-block;
+}
+
+#controlBar .buttonContainer {
+    display: block;
+    width: 60%;
+    margin: auto;
+    color: #F5F5F5;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#linearGraphContainer {
+
+}
+
+#loadLayer {
+    font-family: FontAwesome;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FAFAFA;;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+#loadLayer.on {
+    display: inline;
+}
+
+#loadingAnimation {
+    position: relative;
+    font-size: 5ex;
+    color: #10027E;
+    margin: 10px;
+}
